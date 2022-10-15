@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.main-container{
+    background-color: rgb(232, 220, 220);
+   
+}
+.left-container{
+    width: 230px;
+    height: 730px;
+    padding-top: 100px;
+    padding-left: 30px;
+    background-color:rgb(75, 7, 163) ;
+    font-size: 0.8rem;
+    margin-top: -70px;
+}
+.left-container h5{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.left-container h3{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.imgee{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    margin-left: -40px;
+}
+
+.navlogo{
+    font-size: 1.3rem;
+    color:whitesmoke;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.top-container{
+    height:70px;
+    margin-left: 250px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.topp{
+    margin-top: 10px;
+    margin-left: 930px;
+    
+}
+.imge{
+    height:35px;
+    width: 35px;
+    border-radius: 100px;
+}
+.grid-container{
+    display: grid;
+    gap: 30px 40px;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+   height: 170px;
+   width: 300px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.grid-container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin-left: -21px;
+ 
+}
+.grid-item span{
+    font-size: 15px;
+    font-weight: bolder;
+    color: grey;
+}
+.grid-item button{
+    height: 30px;
+    width: 130px;
+    font-size: 13px;
+    margin-left: 70px;
+}
+.grid-item h5{
+    font-size: 20px;
+    margin-left: -120px;
+    margin-top: 10px;
+}
+
+.grid-item h2{
+    margin-top: -80px;
+    margin-left: 200px;
+    color: rgb(231, 83, 108);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.content p{
+    margin-top: 10px;
+    font-size: 14px;
+    width: 180px;
+   margin-left: -10px;
+    font-family: "Poppins", sans-serif;
+}
+.nav-item{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* media query */
+@media screen and  (max-width:980px) {
+ 
+    .grid-container{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 5px ;
+        height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+       
+    }
+    
+   .grid-container:nth-child(2){
+    grid-column: 1 / -1;
+    grid-row: 1 ;
+}
+
+.grid-container{
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 200px;
+    text-align: left;
+   padding: 0;
+   display: block;
+   
+}
+
+  }
